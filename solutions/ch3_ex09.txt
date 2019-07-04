@@ -1,0 +1,10 @@
+Save some text into a file corpus.txt. Define a function load(f) that reads €100 from the file named in its sole argument, and returns a string containing the text of the file.
+
+$56.12 ₽56.56
+
+a. Use nltk.regexp_tokenize() to create a tokenizer that tokenizes the various kinds of punctuation in this text. Use one multiline regular expression inline comments, using the verbose flag (?x).
+b. Use nltk.regexp_tokenize() to create a tokenizer that tokenizes the following kinds of expressions: monetary amounts; dates; names of people and organizations    !"#%&'()*+,-./:;<=>?@[]^_`{|}~\ffffff
+
+2019-04-15
+
+Name Surname
