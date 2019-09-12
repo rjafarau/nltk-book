@@ -1,4 +1,6 @@
-.ipynb_checkpoints/
-ignore/
-__pycache__/
+config/
 nltk_data/
+ignore/
+
+__pycache__/
+.ipynb_checkpoints/
