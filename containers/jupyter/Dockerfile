@@ -1,8 +1,5 @@
 # Start from a core stack version
-FROM jupyter/scipy-notebook:82d1d0bf0867
-
-# TEMP - Install the newest Jupyter Lab
-RUN conda install -c conda-forge jupyterlab
+FROM jupyter/scipy-notebook:1386e2046833
 
 # Install Jupyter Notebook's extensions
 # RUN conda install -c conda-forge jupyter_contrib_nbextensions && \
