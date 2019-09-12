@@ -1,0 +1,13 @@
+version: '3'
+services:
+  jupyter:
+    build:
+      context: containers/jupyter
+    env_file:
+      - config/jupyter.env
+    ports:
+      - "8888:8888"
+    working_dir: /home/jovyan/source
+    volumes:
+      - ./source:/home/jovyan/source
+      - ./nltk_data:$${NLTK_DATA}
