@@ -10,4 +10,4 @@ services:
     working_dir: /home/jovyan/source
     volumes:
       - ./source:/home/jovyan/source
-      - ./nltk_data:$${NLTK_DATA}
+      - ./nltk_data:/home/jovyan/nltk_data
