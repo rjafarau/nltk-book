@@ -1,7 +1,7 @@
 nltk_data/
 ignore/
 
-#config/secrets.env
+config/secrets.env
 
 __pycache__/
 .ipynb_checkpoints/
