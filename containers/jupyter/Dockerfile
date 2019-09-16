@@ -11,3 +11,6 @@ RUN jupyter lab build
 
 # Install additional packages
 RUN pip install nltk==3.4.5
+
+# Copy MEGAM binaries
+COPY megam-64.opt /home/jovyan/megam/
