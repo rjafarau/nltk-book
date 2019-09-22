@@ -7,7 +7,7 @@ services:
       - config/jupyter.env
       - config/secrets.env
     ports:
-      - "10000:8888"
+      - "8888:8888"
     working_dir: /home/jovyan/source
     volumes:
       - ./source:/home/jovyan/source
