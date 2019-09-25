@@ -1,0 +1,22 @@
+(S
+  (NP Pierre/NNP Vinken/NNP)
+  ,/,
+  (NP 61/CD years/NNS)
+  old/JJ
+  ,/,
+  will/MD
+  join/VB
+  (NP the/DT board/NN)
+  as/IN
+  (NP a/DT nonexecutive/JJ director/NN Nov./NNP 29/CD)
+  ./.)
+
+(S
+  (NP Mr./NNP Vinken/NNP)
+  is/VBZ
+  (NP chairman/NN)
+  of/IN
+  (NP Elsevier/NNP N.V./NNP)
+  ,/,
+  (NP the/DT Dutch/NNP publishing/VBG group/NN)
+  ./.)
