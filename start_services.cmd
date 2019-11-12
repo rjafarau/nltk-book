@@ -1,5 +1,5 @@
 taskkill /IM "vcxsrv.exe" /F
-xlaunch -run config/config.xlaunch
+xlaunch -run docker/jupyter/config.xlaunch
 
 docker-compose down
 docker-compose build

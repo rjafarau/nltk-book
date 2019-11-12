@@ -2,10 +2,10 @@ version: '3'
 services:
   jupyter:
     build:
-      context: containers/jupyter
+      context: docker/jupyter
     env_file:
-      - config/jupyter.env
-      - config/secrets.env
+      - docker/jupyter/jupyter.env
+      - docker/jupyter/secrets.env
     ports:
       - "8888:8888"
     working_dir: /home/jovyan/source
