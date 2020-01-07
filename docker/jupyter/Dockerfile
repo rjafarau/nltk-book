@@ -6,7 +6,9 @@ FROM jupyter/scipy-notebook:1386e2046833
 # 	  jupyter nbextensions_configurator enable --user
 	
 # Install Jupyter Lab's extensions
-RUN jupyter labextension install @jupyterlab/toc
+RUN jupyter labextension install \
+  @jupyterlab/toc@1.0.1 \
+  jupyterlab-clipboard-image@0.0.2
 RUN jupyter lab build
 
 # Install additional packages
