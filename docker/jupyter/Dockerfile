@@ -11,12 +11,6 @@ RUN jupyter labextension install \
   jupyterlab-clipboard-image@0.0.2
 RUN jupyter lab build
 
-# Install additional packages
-RUN pip install nltk==3.4.5
-
-# Copy MEGAM binaries
-COPY megam-64.opt /home/jovyan/megam/
-
 # Install Prover9 and Mace4
 # https://www.cs.unm.edu/~mccune/prover9/download/
 USER root
@@ -29,3 +23,9 @@ RUN tar -zxvf LADR-2009-11A.tar.gz \
   && cd prover9/ \
   && make all
 USER jovyan
+
+# Copy MEGAM binaries
+COPY megam-64.opt /home/jovyan/megam/
+
+# Install additional packages
+RUN pip install nltk==3.4.5
