@@ -16,3 +16,16 @@ RUN pip install nltk==3.4.5
 
 # Copy MEGAM binaries
 COPY megam-64.opt /home/jovyan/megam/
+
+# Install Prover9 and Mace4
+# https://www.cs.unm.edu/~mccune/prover9/download/
+USER root
+WORKDIR /home/jovyan/
+COPY LADR-2009-11A.tar.gz Makefile ./
+RUN tar -zxvf LADR-2009-11A.tar.gz \
+  && rm LADR-2009-11A.tar.gz \
+  && mv LADR-2009-11A prover9 \
+  && mv Makefile prover9/provers.src/ \
+  && cd prover9/ \
+  && make all
+USER jovyan
